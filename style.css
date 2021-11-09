@@ -39,9 +39,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   background-color: rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
     border-radius: 50%;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
 }
+
+.user{
+    font-size: 50px;
+    /* animation: pop 0.5s ease-in; */
+}
+
+@keyframes pop {
+    0% {color: rgb(235, 235, 235); font-size: 50px;}
+    50% {color: red; font-size: 20px;}
+    100%{color: rgb(235, 235, 235); font-size: 50px;}
+  }
 
 .image-div{
     display: flex;

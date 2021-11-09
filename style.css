@@ -1,0 +1,50 @@
+.body{
+    background-color:darksalmon !important;
+}
+
+
+.login-card{
+    background-color: white;
+    height:400px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.login-field{
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    border-block-end: 2px solid white;
+}
+
+.login-field::placeholder{
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.login-field:focus{
+    outline: none;
+    border-block-end: 2px solid #0d6efd;
+}
+
+.black{
+    background-color: blue;
+}
+
+.image-holder{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+}
+
+.image-div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

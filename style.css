@@ -1,5 +1,8 @@
-.body{
-    background-color:darksalmon !important;
+body{
+    background-image: url('./img/1x/bg.png');
+    background-size: 1920px 1080px;
+    overflow:hidden;
+    
 }
 
 
@@ -8,6 +11,7 @@
     height:400px;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    opacity: 1;
 }
 
 .login-field{
@@ -39,10 +43,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    border: 2px solid rgb(235, 235, 235);
+    /* border: 2px solid rgb(235, 235, 235); */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: -71px;
+    margin-bottom: 20px;
+
   
 }
 
@@ -61,4 +68,83 @@
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.middle-content{
+    height: 90vh;
+}
+
+.hexa{
+    position: absolute;
+ 
+    animation: rotating 250s linear infinite; 
+    z-index: -2;
+}
+
+@keyframes rotating{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.hexa-top{
+    top: -100%;
+    right: 50%;
+    user-select: none;
+}
+
+.hexa-bottom{
+    top: 54%;
+    left: 30%;
+    user-select: none;
+}
+
+.cross{
+    position: absolute;
+    /* max-width: 80px; */
+    user-select: none;
+    animation: rotating 50s linear infinite; 
+}
+
+.posi1{
+    top: 10%;
+    left: 70%;
+}
+
+.posi2{
+    top: 20%;
+    left: 10%;
+}
+
+.posi3{
+    top: 80%;
+    left: 30%;
+}
+
+.about-circle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    top: -5%;
+    left: 95%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: all .3s ease-out;
+}
+
+.about-circle:hover{
+    top: -6%;
+    left: 90%;
+    height: 300px;
+    width: 300px;
+
+}
+
+.home-card{
+    height: 80vh;
+    background-color: white;
+    z-index: +2;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
 }

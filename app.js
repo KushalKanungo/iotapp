@@ -1,5 +1,6 @@
 const loginButton=document.getElementById("loginButton");
 const passwordField=document.getElementById("inputPassword")
+const loginCard=document.getElementById("card")
 
 
 
@@ -12,6 +13,9 @@ loginButton.onclick = async ()=>{
         return 
     }
     const res = await axios.post('https://k4shal.pythonanywhere.com/api/login',{ username: username, password: password });
-    alert(res.data)
+    if(res.data=="pass"){
+        console.log("hidden");
+        loginCard.classList.add("d-none")
+    }
 }
 
